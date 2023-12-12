@@ -151,7 +151,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 10%;
+
     color: white;
     height: 100%;
   }
@@ -320,5 +320,8 @@
     }
     .retour {
         width: 90%;
+    }
+    .historique {
+        width: 134px;
     }
   }
