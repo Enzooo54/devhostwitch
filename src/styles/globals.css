@@ -343,4 +343,34 @@ h3 {
     margin-top: 0;
   }
 }
+@media (max-width: 768px) { /* Tablettes */
+  .input {
+      width: 80%;
+  }
+  .binfo {
+      font-size: 1.2rem; /* Ajustement de la taille de la police pour une meilleure lisibilité */
+      height: 15%; /* Augmentation de la hauteur pour faciliter l'interaction */
+      width: 90%; /* Ajustement de la position pour éviter les chevauchements */
+  }
+}
+
+@media (max-width: 480px) { /* Téléphones */
+  .input {
+      width: 90%; /* Encore plus large sur les très petits écrans */
+      font-size: 1.2rem; /* Ajustement de la taille de la police pour une meilleure lisibilité */
+      padding: 0 0.5rem; /* Réduction du padding pour économiser de l'espace */
+    }
+  .h1 {
+      margin-top: -10rem;
+      font-size: 1.6rem;
+  }
+  .binfo {
+    width: 90%;
+    height: 2rem;
+    font-size: 1;
+  }
+  .retour {
+    width: 90%;
+  }
+}
 

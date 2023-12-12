@@ -195,13 +195,13 @@ return (
                     <p>Heure de début: {new Date(currentStreamInfo.started_at).toLocaleTimeString('fr-FR')}</p>
                     <p>Langue: {currentStreamInfo.language}</p>
                     <p>Mature: {currentStreamInfo.is_mature ? 'Oui' : 'Non'}</p>
-                    <p>Image du live :</p><img src={currentStreamInfo.thumbnail_url.replace('{width}', '480').replace('{height}', '300')} alt="Stream thumbnail" />
+                    <p>Image du live :</p><img className={style.liveimg} src={currentStreamInfo.thumbnail_url.replace('{width}', '480').replace('{height}', '300')} alt="Stream thumbnail" />
                     <button className='retour' onClick={displayStreamerInfo}>Retour aux informations du streamer</button>
                 </div>
             )
             )}
             <footer className={style.footer}>
-                <p>© Developpé par <a className={style.a} href='https://github.com/Enzooo54' target='_blank' rel="noopener noreferrer">Enzo</a> 👨‍💻 Tous les droits sont réservés à DevHoster.</p>
+                <p className={style.foot}>© Developpé par <a className={style.a} href='https://github.com/Enzooo54' target='_blank' rel="noopener noreferrer">Enzo</a> 👨‍💻 Tous les droits sont réservés à DevHoster.</p>
             </footer>
         </div>
     </div>
